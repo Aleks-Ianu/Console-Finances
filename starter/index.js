@@ -88,13 +88,10 @@ var finances = [
 ];
 
 // Your task is to write JavaScript code that analyzes the records to calculate each of the following:
-// console.log("Financial Analysis");
-// console.log("================");
 // The total number of months included in the dataset.
 // create a variable that catches the length of the array and display it in console.log
 
 let totalMonths = finances.length;
-console.log("Total Months: " + totalMonths);
 // The net total amount of Profit/Losses over the entire period.
 // for loop to itirate on every nested array index 1
 var totalChanges = 0;
@@ -102,8 +99,7 @@ var totalChanges = 0;
 for (let i = 0; i < totalMonths; i++) {
   totalChanges += finances[i][1];
 }
-// console.log(totalChanges);
-console.log("Total : $" + totalChanges);
+
 
 // The average of the changes in Profit/Losses over the entire period.
 
@@ -117,7 +113,6 @@ for (let i = 1; i < finances.length; i++) {
   
 }
 
-// console.log(averageChange);
 // loop averageChange array
 let changes = 0;
 
@@ -129,8 +124,8 @@ for (let i = 0; i < averageChange.length; i++) {
 
 let average = changes / averageChange.length;
 
-// console.log(average);
-console.log("Average Change: " + average.toFixed(2));
+
+
 
 // The greatest increase in Profit/Losses (date and amount) over the entire period.
 // The greatest decrease in Profit/Losses (date and amount) over the entire period.
@@ -148,8 +143,7 @@ for (let i = 0; i < averageChange.length; i++) {
   }
   
 }
-// console.log(maxProfit);
-// console.log(minProfit);
+
 
 // find out how to connect the month to the values of maxProfit and minProfit
 
@@ -157,11 +151,6 @@ let maxProfitMonth = averageChange.indexOf(maxProfit);
 let minProfitMonth = averageChange.indexOf(minProfit);
 // use the maxProfitMonth and the minProfitMonth + 1 as we started from 1 when array has index 0,
 // and used it in the array finances.
-// console.log(finances[maxProfitMonth + 1]);
-// console.log(finances[minProfitMonth + 1]);
-
-console.log("Greatest Increase in Profits/Losses: " + finances[maxProfitMonth + 1][0] + "  $" + maxProfit);
-console.log("Greatest Decrease in Profits/Losses: " + finances[minProfitMonth + 1][0] + "  $" + minProfit);
 
 // add all of the console.log sections into one general console log
 

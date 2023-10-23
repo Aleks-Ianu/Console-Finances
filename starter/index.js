@@ -88,8 +88,8 @@ var finances = [
 ];
 
 // Your task is to write JavaScript code that analyzes the records to calculate each of the following:
-console.log("Financial Analysis");
-console.log("================");
+// console.log("Financial Analysis");
+// console.log("================");
 // The total number of months included in the dataset.
 // create a variable that catches the length of the array and display it in console.log
 
@@ -165,3 +165,15 @@ console.log("Greatest Decrease in Profits/Losses: " + finances[minProfitMonth + 
 
 // add all of the console.log sections into one general console log
 
+// console.log("Financial Analysis " + " =====================    " + " Total Months: " + totalMonths + " Total: $" + totalChanges
+//             + " Average Change: " + average.toFixed(2) + " Greatest Increase in Profits/Losses: " + finances[maxProfitMonth + 1][0] + "  $" + maxProfit
+//             + "Greatest Decrease in Profits/Losses: " + finances[minProfitMonth + 1][0] + " $" + minProfit);
+
+console.log(`
+            Financial Analysis  
+            =====================     
+            Total Months: ${totalMonths}  
+            Total: $${totalChanges}
+            Average Change: ${average.toFixed(2)}
+            Greatest Increase in Profits/Losses: ${finances[maxProfitMonth + 1][0]} $${maxProfit}
+            Greatest Decrease in Profits/Losses: ${finances[minProfitMonth + 1][0]} $${minProfit}`);

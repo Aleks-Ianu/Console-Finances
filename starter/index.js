@@ -134,4 +134,34 @@ console.log("Average Change: " + average.toFixed(2));
 
 // The greatest increase in Profit/Losses (date and amount) over the entire period.
 // The greatest decrease in Profit/Losses (date and amount) over the entire period.
-// 
+// use the array with the average changes to extract higher and lower number
+
+let maxProfit = 0;
+let minProfit = 0;
+
+for (let i = 0; i < averageChange.length; i++) {
+  const element = averageChange[i];
+  if (element > maxProfit) {
+    maxProfit = averageChange[i];
+  } else if (element < minProfit) {
+    minProfit = averageChange[i];
+  }
+  
+}
+// console.log(maxProfit);
+// console.log(minProfit);
+
+// find out how to connect the month to the values of maxProfit and minProfit
+
+let maxProfitMonth = averageChange.indexOf(maxProfit);
+let minProfitMonth = averageChange.indexOf(minProfit);
+// use the maxProfitMonth and the minProfitMonth + 1 as we started from 1 when array has index 0,
+// and used it in the array finances.
+// console.log(finances[maxProfitMonth + 1]);
+// console.log(finances[minProfitMonth + 1]);
+
+console.log("Greatest Increase in Profits/Losses: " + finances[maxProfitMonth + 1][0] + "  $" + maxProfit);
+console.log("Greatest Decrease in Profits/Losses: " + finances[minProfitMonth + 1][0] + "  $" + minProfit);
+
+// add all of the console.log sections into one general console log
+

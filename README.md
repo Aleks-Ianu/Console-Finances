@@ -1,5 +1,4 @@
-# Name
-Console Finance
+# Console Finance
 
 
 ## Description

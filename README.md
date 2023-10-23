@@ -8,7 +8,7 @@ This project was created to simulate a real life situation were you would need t
 ![WebPage Screenshot](screenshot.jpeg)
 
 ## Installation
-To be able to access the result the user will need to open the file and access the console on the browser.
+To be able to access the result the user will need to open the file and access the console on the browser. Link of the live application: https://aleks-ianu.github.io/Console-Finances/
 
 
 ## License
